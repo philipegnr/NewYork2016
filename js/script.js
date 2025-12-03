@@ -1,124 +1,166 @@
-// Navegação entre dias
-const dayButtons = document.querySelectorAll('.day-btn');
-const daySections = document.querySelectorAll('.day-section');
+// Modal de Participantes
+const modal = document.getElementById('participantModal');
+const closeBtn = document.getElementsByClassName('close')[0];
+const participantBadges = document.querySelectorAll('.participant-badge');
 
-dayButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const targetDay = button.getAttribute('data-day');
-        const targetSection = document.getElementById(targetDay);
+// Abrir modal ao clicar no participante
+participantBadges.forEach(badge => {
+    badge.addEventListener('click', function() {
+        const name = this.getAttribute('data-name');
+        const phone = this.getAttribute('data-phone');
         
-        // Remove active class de todos os botões
-        dayButtons.forEach(btn => btn.classList.remove('active'));
+        document.getElementById('modalName').textContent = name;
+        document.getElementById('modalPhone').textContent = phone;
+        document.getElementById('modalPhone').href = `tel:${phone}`;
         
-        // Adiciona active class no botão clicado
-        button.classList.add('active');
+        // Link do WhatsApp (remove caracteres especiais e espaços)
+        const whatsappNumber = phone.replace(/\D/g, '');
+        const whatsappLink = `https://wa.me/${whatsappNumber}`;
+        document.getElementById('modalWhatsapp').href = whatsappLink;
         
-        // Scroll suave até a seção
-        if (targetSection) {
-            targetSection.scrollIntoView({ 
-                behavior: 'smooth', 
-                block: 'start' 
-            });
-        }
+        modal.style.display = 'block';
     });
 });
 
-// Atualiza botão ativo ao rolar a página
-const observerOptions = {
-    root: null,
-    rootMargin: '-250px 0px -50% 0px',
-    threshold: 0
-};
+// Fechar modal
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
+}
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const sectionId = entry.target.getAttribute('id');
-            dayButtons.forEach(btn => {
-                btn.classList.remove('active');
-                if (btn.getAttribute('data-day') === sectionId) {
-                    btn.classList.add('active');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+// Filtro de Dias
+const filterButtons = document.querySelectorAll('.filter-btn');
+const dayCards = document.querySelectorAll('.day-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Remove active de todos os botões
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Adiciona active no botão clicado
+        this.classList.add('active');
+        
+        const filterDay = this.getAttribute('data-day');
+        
+        if (filterDay === 'all') {
+            // Mostra todos os dias
+            dayCards.forEach(card => {
+                card.classList.remove('hidden');
+                card.style.display = 'block';
+            });
+        } else {
+            // Mostra apenas o dia selecionado
+            dayCards.forEach(card => {
+                if (card.id === filterDay) {
+                    card.classList.remove('hidden');
+                    card.style.display = 'block';
+                    // Scroll suave até o card
+                    setTimeout(() => {
+                        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                } else {
+                    card.classList.add('hidden');
+                    card.style.display = 'none';
                 }
             });
         }
     });
-}, observerOptions);
-
-daySections.forEach(section => {
-    observer.observe(section);
 });
 
-// Modal de Participantes
-const modal = document.getElementById('participantModal');
-const participantButtons = document.querySelectorAll('.participant-btn');
-const closeBtn = document.querySelector('.close');
-const modalName = document.getElementById('modalName');
-const modalPhone = document.getElementById('modalPhone');
-const modalWhatsapp = document.getElementById('modalWhatsapp');
+// Animação ao scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
 
-participantButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const name = button.getAttribute('data-name');
-        const phone = button.getAttribute('data-phone');
-        
-        modalName.textContent = name;
-        modalPhone.textContent = phone;
-        
-        // Formata o número para WhatsApp (remove caracteres especiais)
-        const whatsappNumber = phone.replace(/\D/g, '');
-        modalWhatsapp.href = `https://wa.me/${whatsappNumber}`;
-        
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observar todos os cards
+dayCards.forEach(card => {
+    observer.observe(card);
+});
+
+// Adicionar animação suave ao clicar nos links de localização
+document.querySelectorAll('a[href^="https://www.google.com/maps"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Adiciona uma pequena animação de clique
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            this.style.transform = 'scale(1)';
+        }, 100);
     });
 });
 
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-});
-
-window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-});
-
-// Fecha modal com ESC
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && modal.style.display === 'block') {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-});
-
-// Smooth scroll para links internos
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+// Destacar botão do dia atual ao rolar
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY + 300;
+    
+    dayCards.forEach((card, index) => {
+        const cardTop = card.offsetTop;
+        const cardBottom = cardTop + card.offsetHeight;
+        
+        if (scrollPosition >= cardTop && scrollPosition < cardBottom) {
+            // Verifica se não está no modo de filtro específico
+            const activeFilter = document.querySelector('.filter-btn.active');
+            if (activeFilter && activeFilter.getAttribute('data-day') === 'all') {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                const dayButton = document.querySelector(`[data-day="${card.id}"]`);
+                if (dayButton) {
+                    dayButton.classList.add('active');
+                }
+            }
         }
     });
 });
 
-// Adiciona efeito de fade-in nas seções ao carregar
-window.addEventListener('load', () => {
-    daySections.forEach((section, index) => {
-        setTimeout(() => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            
-            setTimeout(() => {
-                section.style.opacity = '1';
-                section.style.transform = 'translateY(0)';
-            }, 100);
-        }, index * 50);
+// Efeito de parallax suave no header
+window.addEventListener('scroll', function() {
+    const scrolled = window.pageYOffset;
+    const header = document.querySelector('.header-fixed');
+    
+    if (scrolled > 50) {
+        header.style.padding = '15px 0';
+    } else {
+        header.style.padding = '20px 0';
+    }
+});
+
+// Adicionar efeito hover nos ícones de período
+document.querySelectorAll('.period-header').forEach(header => {
+    header.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateX(5px)';
     });
+    
+    header.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateX(0)';
+    });
+});
+
+// Adicionar transição suave
+document.querySelectorAll('.period-header').forEach(header => {
+    header.style.transition = 'transform 0.3s ease';
+});
+
+// Função para copiar número de telefone ao clicar
+document.addEventListener('DOMContentLoaded', function() {
+    // Adicionar tooltip aos participantes
+    participantBadges.forEach(badge => {
+        badge.setAttribute('title', 'Clique para ver informações de contato');
+    });
+    
+    console.log('🗽 Roteiro Nova York carregado com sucesso!');
+    console.log('📅 23 a 31 de março de 2026');
+    console.log('👥 Participantes: Philipe, Sharla, Raphael, Sarah, Robinho');
 });

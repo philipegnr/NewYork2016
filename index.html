@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roteiro - Nova York 2026</title>
+    <title>🗽 Roteiro - Nova York 2026</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗽</text></svg>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header Fixo -->
     <header class="header-fixed">
         <div class="header-content">
-            <h1>🗽 Roteiro - Nova York</h1>
-            <p class="subtitle">23 a 31 de março de 2026</p>
+            <div class="header-title">
+                <i class="fas fa-landmark title-icon"></i>
+                <div>
+                    <h1>Roteiro - Nova York</h1>
+                    <p class="subtitle">23 a 31 de março de 2026</p>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -22,46 +28,46 @@
         <div class="container">
             <div class="info-grid">
                 <div class="info-card">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-home card-icon" style="color: #FF6B6B;"></i>
                     <h3>Hospedagem</h3>
                     <p>Casa em Jersey City</p>
-                    <a href="https://www.google.com/maps/search/?api=1&query=32+Skillman+Ave,+Jersey+City,+NJ+07306,+USA" target="_blank" class="map-link">
-                        <i class="fas fa-map-marker-alt"></i> 32 Skillman Ave, Jersey City, NJ 07306
+                    <a href="https://www.google.com/maps/search/?api=1&query=32+Skillman+Ave,+Jersey+City,+NJ+07306,+USA" target="_blank" class="location-link">
+                        <i class="fas fa-map-marker-alt"></i> 32 Skillman Ave, Jersey City, NJ 07306, USA
                     </a>
                     <p class="detail">10 min a pé do PATH Journal Square</p>
                 </div>
 
                 <div class="info-card">
-                    <i class="fas fa-plane-arrival"></i>
+                    <i class="fas fa-plane-arrival card-icon" style="color: #4ECDC4;"></i>
                     <h3>Chegada</h3>
                     <p class="highlight">23/03 às 14h</p>
                     <p>Aeroporto JFK</p>
                 </div>
 
                 <div class="info-card">
-                    <i class="fas fa-plane-departure"></i>
+                    <i class="fas fa-plane-departure card-icon" style="color: #FFE66D;"></i>
                     <h3>Partida</h3>
                     <p class="highlight">31/03 às 16h</p>
                     <p>Aeroporto JFK</p>
                 </div>
 
                 <div class="info-card">
-                    <i class="fas fa-users"></i>
+                    <i class="fas fa-users card-icon" style="color: #A8DADC;"></i>
                     <h3>Participantes</h3>
                     <div class="participants">
-                        <button class="participant-btn" data-name="Philipe" data-phone="+55 31 99741-0388">Philipe</button>
-                        <button class="participant-btn" data-name="Sharla" data-phone="+55 31 97531-8891">Sharla</button>
-                        <button class="participant-btn" data-name="Raphael" data-phone="+55 31 99253-7858">Raphael</button>
-                        <button class="participant-btn" data-name="Sarah" data-phone="+55 31 99393-1180">Sarah</button>
-                        <button class="participant-btn" data-name="Robinho" data-phone="+55 31 9962-0761">Robinho</button>
+                        <span class="participant-badge" data-name="Philipe" data-phone="+55 31 99741-0388">Philipe</span>
+                        <span class="participant-badge" data-name="Sharla" data-phone="+55 31 97531-8891">Sharla</span>
+                        <span class="participant-badge" data-name="Raphael" data-phone="+55 31 99253-7858">Raphael</span>
+                        <span class="participant-badge" data-name="Sarah" data-phone="+55 31 99393-1180">Sarah</span>
+                        <span class="participant-badge" data-name="Robinho" data-phone="+55 31 9962-0761">Robinho</span>
                     </div>
                 </div>
 
                 <div class="info-card">
-                    <i class="fas fa-folder-open"></i>
+                    <i class="fas fa-folder-open card-icon" style="color: #F4A261;"></i>
                     <h3>Arquivos</h3>
                     <a href="https://drive.google.com/drive/folders/1B3qroB2UmisxA1Ljh3wdbav0VkNutq8T?usp=drive_link" target="_blank" class="drive-link">
-                        <i class="fab fa-google-drive"></i> Acessar Pasta do Drive
+                        <i class="fab fa-google-drive"></i> Acessar Google Drive
                     </a>
                 </div>
             </div>
@@ -71,37 +77,43 @@
     <!-- Filtro de Navegação -->
     <nav class="day-filter">
         <div class="container">
-            <button class="day-btn active" data-day="day-23">23/03 - Dom</button>
-            <button class="day-btn" data-day="day-24">24/03 - Seg</button>
-            <button class="day-btn" data-day="day-25">25/03 - Ter</button>
-            <button class="day-btn" data-day="day-26">26/03 - Qua</button>
-            <button class="day-btn" data-day="day-27">27/03 - Qui</button>
-            <button class="day-btn" data-day="day-28">28/03 - Sex</button>
-            <button class="day-btn" data-day="day-29">29/03 - Sáb</button>
-            <button class="day-btn" data-day="day-30">30/03 - Dom</button>
-            <button class="day-btn" data-day="day-31">31/03 - Seg</button>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-day="all">Todos os Dias</button>
+                <button class="filter-btn" data-day="day1">23/03 - Dom</button>
+                <button class="filter-btn" data-day="day2">24/03 - Seg</button>
+                <button class="filter-btn" data-day="day3">25/03 - Ter</button>
+                <button class="filter-btn" data-day="day4">26/03 - Qua</button>
+                <button class="filter-btn" data-day="day5">27/03 - Qui</button>
+                <button class="filter-btn" data-day="day6">28/03 - Sex</button>
+                <button class="filter-btn" data-day="day7">29/03 - Sáb</button>
+                <button class="filter-btn" data-day="day8">30/03 - Dom</button>
+                <button class="filter-btn" data-day="day9">31/03 - Seg</button>
+            </div>
         </div>
     </nav>
 
-    <!-- Conteúdo dos Dias -->
-    <main class="main-content">
+    <!-- Dias do Roteiro -->
+    <main class="itinerary-container">
         <div class="container">
             
-            <!-- Dia 23/03 -->
-            <section class="day-section" id="day-23">
+            <!-- Dia 1 -->
+            <article class="day-card" id="day1">
                 <div class="day-header">
-                    <h2>📅 23 de março — Domingo</h2>
-                    <p class="day-subtitle">Chegada + Supermercado + Times Square</p>
+                    <div class="day-number">Dia 1</div>
+                    <div class="day-info">
+                        <h2>23 de março — Domingo</h2>
+                        <p class="day-theme">Chegada + Supermercado + Times Square</p>
+                    </div>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
+                <div class="period-section">
+                    <div class="period-header afternoon">
                         <i class="fas fa-sun"></i>
                         <h3>Tarde</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-plane-arrival"></i> Chegada no <a href="https://www.google.com/maps/search/?api=1&query=JFK+Airport" target="_blank">JFK</a> às 14h</li>
-                        <li><i class="fas fa-train"></i> Deslocamento para <a href="https://www.google.com/maps/search/?api=1&query=Jersey+City,+NJ" target="_blank">Jersey City</a>:
+                    <ul class="activity-list">
+                        <li><i class="fas fa-plane-arrival"></i> Chegada no <a href="https://www.google.com/maps/search/?api=1&query=JFK+Airport+New+York" target="_blank" class="inline-link">JFK</a> às 14h</li>
+                        <li><i class="fas fa-subway"></i> Deslocamento para Jersey City:
                             <ul class="sub-list">
                                 <li>AirTrain → Jamaica → LIRR → Penn Station → PATH, ou</li>
                                 <li>AirTrain → metrô (E line) → PATH, ou</li>
@@ -113,355 +125,379 @@
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
+                <div class="period-section">
+                    <div class="period-header night">
                         <i class="fas fa-moon"></i>
                         <h3>Noite</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-train"></i> PATH para <a href="https://www.google.com/maps/search/?api=1&query=33rd+Street,+New+York" target="_blank">33rd Street</a> → caminhada até <a href="https://www.google.com/maps/search/?api=1&query=Times+Square,+New+York" target="_blank">Times Square</a></li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-subway"></i> PATH para <a href="https://www.google.com/maps/search/?api=1&query=33rd+Street+Station+New+York" target="_blank" class="inline-link">33rd Street</a> → caminhada até <a href="https://www.google.com/maps/search/?api=1&query=Times+Square+New+York" target="_blank" class="inline-link">Times Square</a></li>
                         <li><i class="fas fa-camera"></i> Passeio noturno pelas luzes, fotos, lojas</li>
                         <li><i class="fas fa-utensils"></i> Jantar por ali e retorno para Journal Square</li>
                     </ul>
                 </div>
-            </section>
+            </article>
 
-            <!-- Dia 24/03 -->
-            <section class="day-section" id="day-24">
+            <!-- Dia 2 -->
+            <article class="day-card" id="day2">
                 <div class="day-header">
-                    <h2>📅 24 de março — Segunda-feira</h2>
-                    <p class="day-subtitle">Estátua da Liberdade (somente ver) + região sul de Manhattan</p>
+                    <div class="day-number">Dia 2</div>
+                    <div class="day-info">
+                        <h2>24 de março — Segunda-feira</h2>
+                        <p class="day-theme">Estátua da Liberdade + Sul de Manhattan</p>
+                    </div>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-sun"></i>
+                <div class="period-section">
+                    <div class="period-header morning">
+                        <i class="fas fa-cloud-sun"></i>
                         <h3>Manhã</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-train"></i> PATH → <a href="https://www.google.com/maps/search/?api=1&query=33rd+Street,+New+York" target="_blank">33rd St</a> ou <a href="https://www.google.com/maps/search/?api=1&query=World+Trade+Center,+New+York" target="_blank">WTC</a> (dependendo do pier escolhido)</li>
-                        <li><i class="fas fa-ship"></i> Pegue o Circle Line Liberty Cruise ou equivalente (50–75 min), que passa bem perto da <a href="https://www.google.com/maps/search/?api=1&query=Statue+of+Liberty,+New+York" target="_blank">Estátua da Liberdade</a> sem desembarcar</li>
-                        <li><i class="fas fa-info-circle"></i> <strong>Alternativa grátis:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Staten+Island+Ferry" target="_blank">Staten Island Ferry</a> (vista mais distante)</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-subway"></i> PATH → <a href="https://www.google.com/maps/search/?api=1&query=33rd+Street+Station+New+York" target="_blank" class="inline-link">33rd St</a> ou <a href="https://www.google.com/maps/search/?api=1&query=World+Trade+Center+Station+New+York" target="_blank" class="inline-link">WTC</a></li>
+                        <li><i class="fas fa-ship"></i> Pegue o Circle Line Liberty Cruise ou equivalente (50–75 min), que passa perto da <a href="https://www.google.com/maps/search/?api=1&query=Statue+of+Liberty+New+York" target="_blank" class="inline-link">Estátua da Liberdade</a> sem desembarcar</li>
+                        <li><i class="fas fa-info-circle"></i> Alternativa grátis: <a href="https://www.google.com/maps/search/?api=1&query=Staten+Island+Ferry+New+York" target="_blank" class="inline-link">Staten Island Ferry</a> (vista mais distante)</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-cloud-sun"></i>
+                <div class="period-section">
+                    <div class="period-header afternoon">
+                        <i class="fas fa-sun"></i>
                         <h3>Tarde</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-tree"></i> Caminhada pelo <a href="https://www.google.com/maps/search/?api=1&query=Battery+Park,+New+York" target="_blank">Battery Park</a> e <a href="https://www.google.com/maps/search/?api=1&query=South+Street+Seaport,+New+York" target="_blank">South Street Seaport</a></li>
-                        <li><i class="fas fa-utensils"></i> Almoço no Seaport ou no FiDi (<a href="https://www.google.com/maps/search/?api=1&query=Wall+Street,+New+York" target="_blank">Wall Street</a> / <a href="https://www.google.com/maps/search/?api=1&query=Stone+Street,+New+York" target="_blank">Stone Street</a>)</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-walking"></i> Caminhada pelo <a href="https://www.google.com/maps/search/?api=1&query=Battery+Park+New+York" target="_blank" class="inline-link">Battery Park</a> e <a href="https://www.google.com/maps/search/?api=1&query=South+Street+Seaport+New+York" target="_blank" class="inline-link">South Street Seaport</a></li>
+                        <li><i class="fas fa-utensils"></i> Almoço no Seaport ou no FiDi (<a href="https://www.google.com/maps/search/?api=1&query=Wall+Street+New+York" target="_blank" class="inline-link">Wall Street</a> / <a href="https://www.google.com/maps/search/?api=1&query=Stone+Street+New+York" target="_blank" class="inline-link">Stone Street</a>)</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
+                <div class="period-section">
+                    <div class="period-header night">
                         <i class="fas fa-moon"></i>
                         <h3>Noite</h3>
                     </div>
-                    <ul class="activities">
+                    <ul class="activity-list">
                         <li><i class="fas fa-home"></i> Retorno para Jersey City</li>
-                        <li><i class="fas fa-utensils"></i> Jantar leve em <a href="https://www.google.com/maps/search/?api=1&query=Journal+Square,+Jersey+City" target="_blank">Journal Square</a> ou <a href="https://www.google.com/maps/search/?api=1&query=Hoboken,+NJ" target="_blank">Hoboken</a></li>
+                        <li><i class="fas fa-utensils"></i> Jantar leve em <a href="https://www.google.com/maps/search/?api=1&query=Journal+Square+Jersey+City" target="_blank" class="inline-link">Journal Square</a> ou <a href="https://www.google.com/maps/search/?api=1&query=Hoboken+New+Jersey" target="_blank" class="inline-link">Hoboken</a></li>
                     </ul>
                 </div>
-            </section>
+            </article>
 
-            <!-- Dia 25/03 -->
-            <section class="day-section" id="day-25">
+            <!-- Dia 3 -->
+            <article class="day-card" id="day3">
                 <div class="day-header">
-                    <h2>📅 25 de março — Terça-feira</h2>
-                    <p class="day-subtitle">SUMMIT One Vanderbilt + Midtown + Top of the Rock</p>
+                    <div class="day-number">Dia 3</div>
+                    <div class="day-info">
+                        <h2>25 de março — Terça-feira</h2>
+                        <p class="day-theme">SUMMIT One Vanderbilt + Midtown + Top of the Rock</p>
+                    </div>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-sun"></i>
+                <div class="period-section">
+                    <div class="period-header morning">
+                        <i class="fas fa-cloud-sun"></i>
                         <h3>Manhã</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-train"></i> PATH → <a href="https://www.google.com/maps/search/?api=1&query=33rd+Street,+New+York" target="_blank">33rd St</a></li>
-                        <li><i class="fas fa-walking"></i> Caminhada até <a href="https://www.google.com/maps/search/?api=1&query=SUMMIT+One+Vanderbilt,+New+York" target="_blank">SUMMIT One Vanderbilt</a> (entrada pelo <a href="https://www.google.com/maps/search/?api=1&query=Grand+Central+Terminal,+New+York" target="_blank">Grand Central</a>)</li>
-                        <li><i class="fas fa-building"></i> Visita ao observatório (experiência imersiva)</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-subway"></i> PATH → <a href="https://www.google.com/maps/search/?api=1&query=33rd+Street+Station+New+York" target="_blank" class="inline-link">33rd St</a></li>
+                        <li><i class="fas fa-building"></i> Caminhada até <a href="https://www.google.com/maps/search/?api=1&query=SUMMIT+One+Vanderbilt+New+York" target="_blank" class="inline-link">SUMMIT One Vanderbilt</a> (entrada pelo <a href="https://www.google.com/maps/search/?api=1&query=Grand+Central+Terminal+New+York" target="_blank" class="inline-link">Grand Central</a>)</li>
+                        <li><i class="fas fa-eye"></i> Visita ao observatório (experiência imersiva)</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-cloud-sun"></i>
+                <div class="period-section">
+                    <div class="period-header afternoon">
+                        <i class="fas fa-sun"></i>
                         <h3>Tarde</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-tree"></i> Passeio pela região: <a href="https://www.google.com/maps/search/?api=1&query=Bryant+Park,+New+York" target="_blank">Bryant Park</a>, <a href="https://www.google.com/maps/search/?api=1&query=New+York+Public+Library" target="_blank">Biblioteca Pública</a>, <a href="https://www.google.com/maps/search/?api=1&query=5th+Avenue,+New+York" target="_blank">5th Avenue</a></li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-walking"></i> Passeio pela região: <a href="https://www.google.com/maps/search/?api=1&query=Bryant+Park+New+York" target="_blank" class="inline-link">Bryant Park</a>, <a href="https://www.google.com/maps/search/?api=1&query=New+York+Public+Library" target="_blank" class="inline-link">Biblioteca Pública</a>, <a href="https://www.google.com/maps/search/?api=1&query=5th+Avenue+New+York" target="_blank" class="inline-link">5th Avenue</a></li>
                         <li><i class="fas fa-utensils"></i> Almoço em Midtown</li>
-                        <li><i class="fas fa-shopping-bag"></i> Compras opcionais (<a href="https://www.google.com/maps/search/?api=1&query=Herald+Square,+New+York" target="_blank">Herald Square</a>, <a href="https://www.google.com/maps/search/?api=1&query=34th+Street,+New+York" target="_blank">34th Street</a>, 5th Ave)</li>
+                        <li><i class="fas fa-shopping-bag"></i> Compras opcionais (<a href="https://www.google.com/maps/search/?api=1&query=Herald+Square+New+York" target="_blank" class="inline-link">Herald Square</a>, <a href="https://www.google.com/maps/search/?api=1&query=34th+Street+New+York" target="_blank" class="inline-link">34th Street</a>, 5th Ave)</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
+                <div class="period-section">
+                    <div class="period-header night">
                         <i class="fas fa-moon"></i>
                         <h3>Noite</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-building"></i> <a href="https://www.google.com/maps/search/?api=1&query=Top+of+the+Rock,+New+York" target="_blank">Top of the Rock</a> no fim da tarde / início da noite para ver o pôr do sol e o skyline</li>
-                        <li><i class="fas fa-utensils"></i> Jantar próximo ao <a href="https://www.google.com/maps/search/?api=1&query=Rockefeller+Center,+New+York" target="_blank">Rockefeller Center</a></li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-building"></i> <a href="https://www.google.com/maps/search/?api=1&query=Top+of+the+Rock+New+York" target="_blank" class="inline-link">Top of the Rock</a> no fim da tarde / início da noite para ver o pôr do sol e o skyline</li>
+                        <li><i class="fas fa-utensils"></i> Jantar próximo ao <a href="https://www.google.com/maps/search/?api=1&query=Rockefeller+Center+New+York" target="_blank" class="inline-link">Rockefeller Center</a></li>
                     </ul>
                 </div>
-            </section>
+            </article>
 
-            <!-- Dia 26/03 -->
-            <section class="day-section" id="day-26">
+            <!-- Dia 4 -->
+            <article class="day-card" id="day4">
                 <div class="day-header">
-                    <h2>📅 26 de março — Quarta-feira</h2>
-                    <p class="day-subtitle">Central Park + MET ou Natural History</p>
+                    <div class="day-number">Dia 4</div>
+                    <div class="day-info">
+                        <h2>26 de março — Quarta-feira</h2>
+                        <p class="day-theme">Central Park + MET ou Natural History</p>
+                    </div>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-sun"></i>
+                <div class="period-section">
+                    <div class="period-header morning">
+                        <i class="fas fa-cloud-sun"></i>
                         <h3>Manhã</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-train"></i> PATH → 33rd St → metrô até <a href="https://www.google.com/maps/search/?api=1&query=Central+Park,+New+York" target="_blank">Central Park</a></li>
-                        <li><i class="fas fa-tree"></i> Caminhada pelos principais pontos: <a href="https://www.google.com/maps/search/?api=1&query=Bethesda+Terrace,+Central+Park" target="_blank">Bethesda Terrace</a>, <a href="https://www.google.com/maps/search/?api=1&query=Strawberry+Fields,+Central+Park" target="_blank">Strawberry Fields</a>, <a href="https://www.google.com/maps/search/?api=1&query=Bow+Bridge,+Central+Park" target="_blank">Bow Bridge</a></li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-subway"></i> PATH → 33rd St → metrô até <a href="https://www.google.com/maps/search/?api=1&query=Central+Park+New+York" target="_blank" class="inline-link">Central Park</a></li>
+                        <li><i class="fas fa-walking"></i> Caminhada pelos principais pontos: <a href="https://www.google.com/maps/search/?api=1&query=Bethesda+Terrace+Central+Park" target="_blank" class="inline-link">Bethesda Terrace</a>, <a href="https://www.google.com/maps/search/?api=1&query=Strawberry+Fields+Central+Park" target="_blank" class="inline-link">Strawberry Fields</a>, <a href="https://www.google.com/maps/search/?api=1&query=Bow+Bridge+Central+Park" target="_blank" class="inline-link">Bow Bridge</a></li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-cloud-sun"></i>
+                <div class="period-section">
+                    <div class="period-header afternoon">
+                        <i class="fas fa-sun"></i>
                         <h3>Tarde</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-landmark"></i> <strong>Escolha 1:</strong> <a href="https://www.google.com/maps/search/?api=1&query=The+Metropolitan+Museum+of+Art,+New+York" target="_blank">The MET (Metropolitan Museum)</a> — arte clássica e monumental</li>
-                        <li><i class="fas fa-dragon"></i> <strong>Escolha 2:</strong> <a href="https://www.google.com/maps/search/?api=1&query=American+Museum+of+Natural+History,+New+York" target="_blank">American Museum of Natural History</a> — dinossauros, universo, história natural</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-university"></i> <strong>Escolha 1:</strong> <a href="https://www.google.com/maps/search/?api=1&query=The+MET+Metropolitan+Museum+New+York" target="_blank" class="inline-link">The MET (Metropolitan Museum)</a> — arte clássica e monumental</li>
+                        <li><i class="fas fa-dragon"></i> <strong>Escolha 2:</strong> <a href="https://www.google.com/maps/search/?api=1&query=American+Museum+of+Natural+History+New+York" target="_blank" class="inline-link">American Museum of Natural History</a> — dinossauros, universo, história natural</li>
                         <li><i class="fas fa-utensils"></i> Almoço dentro ou perto do museu</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
+                <div class="period-section">
+                    <div class="period-header night">
                         <i class="fas fa-moon"></i>
                         <h3>Noite</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-walking"></i> Passeio e jantar no <a href="https://www.google.com/maps/search/?api=1&query=Upper+West+Side,+New+York" target="_blank">Upper West</a> ou Midtown</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-walking"></i> Passeio e jantar no <a href="https://www.google.com/maps/search/?api=1&query=Upper+West+Side+New+York" target="_blank" class="inline-link">Upper West</a> ou Midtown</li>
                         <li><i class="fas fa-home"></i> Retorno a Jersey City</li>
                     </ul>
                 </div>
-            </section>
+            </article>
 
-            <!-- Dia 27/03 -->
-            <section class="day-section" id="day-27">
+            <!-- Dia 5 -->
+            <article class="day-card" id="day5">
                 <div class="day-header">
-                    <h2>📅 27 de março — Quinta-feira</h2>
-                    <p class="day-subtitle">Lower Manhattan + One World (opcional) + 9/11 Memorial</p>
+                    <div class="day-number">Dia 5</div>
+                    <div class="day-info">
+                        <h2>27 de março — Quinta-feira</h2>
+                        <p class="day-theme">Lower Manhattan + One World + 9/11 Memorial</p>
+                    </div>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-sun"></i>
+                <div class="period-section">
+                    <div class="period-header morning">
+                        <i class="fas fa-cloud-sun"></i>
                         <h3>Manhã</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-train"></i> PATH direto ao <a href="https://www.google.com/maps/search/?api=1&query=World+Trade+Center,+New+York" target="_blank">World Trade Center</a></li>
-                        <li><i class="fas fa-monument"></i> Visita ao <a href="https://www.google.com/maps/search/?api=1&query=9/11+Memorial,+New+York" target="_blank">9/11 Memorial</a> (gratuito)</li>
-                        <li><i class="fas fa-landmark"></i> <a href="https://www.google.com/maps/search/?api=1&query=9/11+Museum,+New+York" target="_blank">Museu do 11 de Setembro</a> (opcional – ~2h)</li>
-                        <li><i class="fas fa-building"></i> Se desejar: <a href="https://www.google.com/maps/search/?api=1&query=One+World+Observatory,+New+York" target="_blank">One World Observatory</a> (ótima vista do sul de Manhattan)</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-subway"></i> PATH direto ao <a href="https://www.google.com/maps/search/?api=1&query=World+Trade+Center+New+York" target="_blank" class="inline-link">World Trade Center</a></li>
+                        <li><i class="fas fa-monument"></i> Visita ao <a href="https://www.google.com/maps/search/?api=1&query=9/11+Memorial+New+York" target="_blank" class="inline-link">9/11 Memorial</a> (gratuito)</li>
+                        <li><i class="fas fa-building"></i> <a href="https://www.google.com/maps/search/?api=1&query=9/11+Museum+New+York" target="_blank" class="inline-link">Museu do 11 de Setembro</a> (opcional – ~2h)</li>
+                        <li><i class="fas fa-eye"></i> Se desejar: <a href="https://www.google.com/maps/search/?api=1&query=One+World+Observatory+New+York" target="_blank" class="inline-link">One World Observatory</a> (ótima vista do sul de Manhattan)</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-cloud-sun"></i>
+                <div class="period-section">
+                    <div class="period-header afternoon">
+                        <i class="fas fa-sun"></i>
                         <h3>Tarde</h3>
                     </div>
-                    <ul class="activities">
+                    <ul class="activity-list">
                         <li><i class="fas fa-walking"></i> Caminhada por:
                             <ul class="sub-list">
-                                <li><a href="https://www.google.com/maps/search/?api=1&query=Wall+Street,+New+York" target="_blank">Wall Street</a></li>
-                                <li><a href="https://www.google.com/maps/search/?api=1&query=Federal+Hall,+New+York" target="_blank">Federal Hall</a></li>
-                                <li><a href="https://www.google.com/maps/search/?api=1&query=Stone+Street,+New+York" target="_blank">Stone Street</a> (bom para almoço)</li>
-                                <li><a href="https://www.google.com/maps/search/?api=1&query=Battery+Park,+New+York" target="_blank">Battery Park</a></li>
+                                <li><a href="https://www.google.com/maps/search/?api=1&query=Wall+Street+New+York" target="_blank" class="inline-link">Wall Street</a></li>
+                                <li><a href="https://www.google.com/maps/search/?api=1&query=Federal+Hall+New+York" target="_blank" class="inline-link">Federal Hall</a></li>
+                                <li><a href="https://www.google.com/maps/search/?api=1&query=Stone+Street+New+York" target="_blank" class="inline-link">Stone Street</a> (bom para almoço)</li>
+                                <li><a href="https://www.google.com/maps/search/?api=1&query=Battery+Park+New+York" target="_blank" class="inline-link">Battery Park</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
+                <div class="period-section">
+                    <div class="period-header night">
                         <i class="fas fa-moon"></i>
                         <h3>Noite</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-utensils"></i> Explore <a href="https://www.google.com/maps/search/?api=1&query=Tribeca,+New+York" target="_blank">Tribeca</a> ou <a href="https://www.google.com/maps/search/?api=1&query=SoHo,+New+York" target="_blank">SoHo</a> para jantar</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-walking"></i> Explore <a href="https://www.google.com/maps/search/?api=1&query=Tribeca+New+York" target="_blank" class="inline-link">Tribeca</a> ou <a href="https://www.google.com/maps/search/?api=1&query=SoHo+New+York" target="_blank" class="inline-link">SoHo</a> para jantar</li>
                         <li><i class="fas fa-home"></i> Retorno para Jersey City</li>
                     </ul>
                 </div>
-            </section>
+            </article>
 
-            <!-- Dia 28/03 -->
-            <section class="day-section" id="day-28">
+            <!-- Dia 6 -->
+            <article class="day-card" id="day6">
                 <div class="day-header">
-                    <h2>📅 28 de março — Sexta-feira</h2>
-                    <p class="day-subtitle">Brooklyn: Ponte, DUMBO e Brooklyn Heights</p>
+                    <div class="day-number">Dia 6</div>
+                    <div class="day-info">
+                        <h2>28 de março — Sexta-feira</h2>
+                        <p class="day-theme">Brooklyn: Ponte, DUMBO e Brooklyn Heights</p>
+                    </div>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-sun"></i>
+                <div class="period-section">
+                    <div class="period-header morning">
+                        <i class="fas fa-cloud-sun"></i>
                         <h3>Manhã</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-train"></i> PATH → WTC → caminhada até a <a href="https://www.google.com/maps/search/?api=1&query=Brooklyn+Bridge,+New+York" target="_blank">Brooklyn Bridge</a></li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-subway"></i> PATH → WTC → caminhada até a <a href="https://www.google.com/maps/search/?api=1&query=Brooklyn+Bridge+New+York" target="_blank" class="inline-link">Brooklyn Bridge</a></li>
                         <li><i class="fas fa-walking"></i> Atravessar a ponte a pé (melhor cedo)</li>
-                        <li><i class="fas fa-camera"></i> Chegada em <a href="https://www.google.com/maps/search/?api=1&query=DUMBO,+Brooklyn" target="_blank">DUMBO</a> para fotos clássicas (<a href="https://www.google.com/maps/search/?api=1&query=Washington+Street,+DUMBO,+Brooklyn" target="_blank">Washington St</a>)</li>
+                        <li><i class="fas fa-camera"></i> Chegada em <a href="https://www.google.com/maps/search/?api=1&query=DUMBO+Brooklyn+New+York" target="_blank" class="inline-link">DUMBO</a> para fotos clássicas (<a href="https://www.google.com/maps/search/?api=1&query=Washington+Street+DUMBO+Brooklyn" target="_blank" class="inline-link">Washington St</a>)</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-cloud-sun"></i>
+                <div class="period-section">
+                    <div class="period-header afternoon">
+                        <i class="fas fa-sun"></i>
                         <h3>Tarde</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-tree"></i> Caminhada até o <a href="https://www.google.com/maps/search/?api=1&query=Brooklyn+Bridge+Park" target="_blank">Brooklyn Bridge Park</a> e <a href="https://www.google.com/maps/search/?api=1&query=Brooklyn+Heights+Promenade" target="_blank">Brooklyn Heights Promenade</a></li>
-                        <li><i class="fas fa-utensils"></i> Almoço em DUMBO ou <a href="https://www.google.com/maps/search/?api=1&query=Brooklyn+Heights,+Brooklyn" target="_blank">Brooklyn Heights</a></li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-walking"></i> Caminhada até o <a href="https://www.google.com/maps/search/?api=1&query=Brooklyn+Bridge+Park+New+York" target="_blank" class="inline-link">Brooklyn Bridge Park</a> e <a href="https://www.google.com/maps/search/?api=1&query=Brooklyn+Heights+Promenade+New+York" target="_blank" class="inline-link">Brooklyn Heights Promenade</a></li>
+                        <li><i class="fas fa-utensils"></i> Almoço em DUMBO ou Brooklyn Heights</li>
                         <li><i class="fas fa-eye"></i> Vistas excelentes do skyline</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
+                <div class="period-section">
+                    <div class="period-header night">
                         <i class="fas fa-moon"></i>
                         <h3>Noite</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-home"></i> Retorno a Manhattan ou Jersey City</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-subway"></i> Retorno a Manhattan ou Jersey City</li>
                         <li><i class="fas fa-utensils"></i> Jantar tranquilo em casa ou em Hoboken</li>
                     </ul>
                 </div>
-            </section>
+            </article>
 
-            <!-- Dia 29/03 -->
-            <section class="day-section" id="day-29">
+            <!-- Dia 7 -->
+            <article class="day-card" id="day7">
                 <div class="day-header">
-                    <h2>📅 29 de março — Sábado</h2>
-                    <p class="day-subtitle">SoHo, Greenwich Village, Chinatown e Little Italy</p>
+                    <div class="day-number">Dia 7</div>
+                    <div class="day-info">
+                        <h2>29 de março — Sábado</h2>
+                        <p class="day-theme">SoHo, Greenwich Village, Chinatown e Little Italy</p>
+                    </div>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-sun"></i>
+                <div class="period-section">
+                    <div class="period-header morning">
+                        <i class="fas fa-cloud-sun"></i>
                         <h3>Manhã</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-train"></i> PATH → 33rd St → metrô para <a href="https://www.google.com/maps/search/?api=1&query=SoHo,+New+York" target="_blank">SoHo</a></li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-subway"></i> PATH → 33rd St → metrô para <a href="https://www.google.com/maps/search/?api=1&query=SoHo+New+York" target="_blank" class="inline-link">SoHo</a></li>
                         <li><i class="fas fa-shopping-bag"></i> Compras, cafés e ruas estilosas</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-cloud-sun"></i>
+                <div class="period-section">
+                    <div class="period-header afternoon">
+                        <i class="fas fa-sun"></i>
                         <h3>Tarde</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-walking"></i> Caminhada até <a href="https://www.google.com/maps/search/?api=1&query=Greenwich+Village,+New+York" target="_blank">Greenwich Village</a> → <a href="https://www.google.com/maps/search/?api=1&query=Washington+Square+Park,+New+York" target="_blank">Washington Square Park</a></li>
-                        <li><i class="fas fa-utensils"></i> Depois siga para <a href="https://www.google.com/maps/search/?api=1&query=Chinatown,+New+York" target="_blank">Chinatown</a> e <a href="https://www.google.com/maps/search/?api=1&query=Little+Italy,+New+York" target="_blank">Little Italy</a> para almoço ou sobremesas</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-walking"></i> Caminhada até <a href="https://www.google.com/maps/search/?api=1&query=Greenwich+Village+New+York" target="_blank" class="inline-link">Greenwich Village</a> → <a href="https://www.google.com/maps/search/?api=1&query=Washington+Square+Park+New+York" target="_blank" class="inline-link">Washington Square Park</a></li>
+                        <li><i class="fas fa-map-signs"></i> Depois siga para <a href="https://www.google.com/maps/search/?api=1&query=Chinatown+New+York" target="_blank" class="inline-link">Chinatown</a> e <a href="https://www.google.com/maps/search/?api=1&query=Little+Italy+New+York" target="_blank" class="inline-link">Little Italy</a> para almoço ou sobremesas</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
+                <div class="period-section">
+                    <div class="period-header night">
                         <i class="fas fa-moon"></i>
                         <h3>Noite</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-utensils"></i> Jantar no <a href="https://www.google.com/maps/search/?api=1&query=West+Village,+New+York" target="_blank">West Village</a> (área cheia de bares e jazz)</li>
-                        <li><i class="fas fa-home"></i> Volta pelo PATH</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-utensils"></i> Jantar no <a href="https://www.google.com/maps/search/?api=1&query=West+Village+New+York" target="_blank" class="inline-link">West Village</a> (área cheia de bares e jazz)</li>
+                        <li><i class="fas fa-subway"></i> Volta pelo PATH</li>
                     </ul>
                 </div>
-            </section>
+            </article>
 
-            <!-- Dia 30/03 -->
-            <section class="day-section" id="day-30">
+            <!-- Dia 8 -->
+            <article class="day-card" id="day8">
                 <div class="day-header">
-                    <h2>📅 30 de março — Domingo</h2>
-                    <p class="day-subtitle">Dia livre / Ajustes / High Line</p>
+                    <div class="day-number">Dia 8</div>
+                    <div class="day-info">
+                        <h2>30 de março — Domingo</h2>
+                        <p class="day-theme">Dia livre / Ajustes / High Line</p>
+                    </div>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-sun"></i>
+                <div class="period-section">
+                    <div class="period-header morning">
+                        <i class="fas fa-cloud-sun"></i>
                         <h3>Manhã</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-walking"></i> Caminhada pela <a href="https://www.google.com/maps/search/?api=1&query=High+Line,+New+York" target="_blank">High Line</a> (bem agradável)</li>
-                        <li><i class="fas fa-shopping-cart"></i> Visita ao <a href="https://www.google.com/maps/search/?api=1&query=Chelsea+Market,+New+York" target="_blank">Chelsea Market</a> (ótimo para comer)</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-walking"></i> Caminhada pela <a href="https://www.google.com/maps/search/?api=1&query=High+Line+New+York" target="_blank" class="inline-link">High Line</a> (bem agradável)</li>
+                        <li><i class="fas fa-shopping-basket"></i> Visita ao <a href="https://www.google.com/maps/search/?api=1&query=Chelsea+Market+New+York" target="_blank" class="inline-link">Chelsea Market</a> (ótimo para comer)</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-cloud-sun"></i>
+                <div class="period-section">
+                    <div class="period-header afternoon">
+                        <i class="fas fa-sun"></i>
                         <h3>Tarde</h3>
                     </div>
-                    <ul class="activities">
+                    <ul class="activity-list">
                         <li><i class="fas fa-star"></i> Escolha conforme seu gosto ou algo que faltou:
                             <ul class="sub-list">
                                 <li>Voltar a algum lugar favorito</li>
-                                <li>Ir ao <a href="https://www.google.com/maps/search/?api=1&query=MoMA,+New+York" target="_blank">MoMA</a></li>
-                                <li>Passear no <a href="https://www.google.com/maps/search/?api=1&query=Hudson+River+Park,+New+York" target="_blank">Hudson River Park</a></li>
+                                <li>Ir ao <a href="https://www.google.com/maps/search/?api=1&query=MoMA+New+York" target="_blank" class="inline-link">MoMA</a></li>
+                                <li>Passear no <a href="https://www.google.com/maps/search/?api=1&query=Hudson+River+Park+New+York" target="_blank" class="inline-link">Hudson River Park</a></li>
                                 <li>Fazer últimas compras</li>
                             </ul>
                         </li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
+                <div class="period-section">
+                    <div class="period-header night">
                         <i class="fas fa-moon"></i>
                         <h3>Noite</h3>
                     </div>
-                    <ul class="activities">
+                    <ul class="activity-list">
                         <li><i class="fas fa-utensils"></i> Jantar de despedida</li>
                         <li><i class="fas fa-suitcase"></i> Arrumar malas</li>
                     </ul>
                 </div>
-            </section>
+            </article>
 
-            <!-- Dia 31/03 -->
-            <section class="day-section" id="day-31">
+            <!-- Dia 9 -->
+            <article class="day-card" id="day9">
                 <div class="day-header">
-                    <h2>📅 31 de março — Segunda-feira</h2>
-                    <p class="day-subtitle">Dia do retorno</p>
+                    <div class="day-number">Dia 9</div>
+                    <div class="day-info">
+                        <h2>31 de março — Segunda-feira</h2>
+                        <p class="day-theme">Dia do retorno</p>
+                    </div>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-sun"></i>
+                <div class="period-section">
+                    <div class="period-header morning">
+                        <i class="fas fa-cloud-sun"></i>
                         <h3>Manhã</h3>
                     </div>
-                    <ul class="activities">
+                    <ul class="activity-list">
                         <li><i class="fas fa-door-open"></i> Check-out</li>
                         <li><i class="fas fa-coffee"></i> Último café em Journal Square</li>
                     </ul>
                 </div>
 
-                <div class="period">
-                    <div class="period-header">
-                        <i class="fas fa-cloud-sun"></i>
+                <div class="period-section">
+                    <div class="period-header afternoon">
+                        <i class="fas fa-sun"></i>
                         <h3>Tarde</h3>
                     </div>
-                    <ul class="activities">
-                        <li><i class="fas fa-plane-departure"></i> Deslocamento para o <a href="https://www.google.com/maps/search/?api=1&query=JFK+Airport" target="_blank">JFK</a> (voo às 16h)</li>
-                        <li><i class="fas fa-clock"></i> <strong>Sugestão:</strong> sair por volta de 11h30–12h para chegar com boa margem</li>
+                    <ul class="activity-list">
+                        <li><i class="fas fa-plane-departure"></i> Deslocamento para o JFK (voo às 16h)</li>
+                        <li><i class="fas fa-clock"></i> Sugestão: sair por volta de 11h30–12h para chegar com boa margem</li>
                     </ul>
                 </div>
-            </section>
+            </article>
 
         </div>
     </main>
@@ -470,13 +506,28 @@
     <div id="participantModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2 id="modalName"></h2>
-            <p class="modal-phone"><i class="fas fa-phone"></i> <span id="modalPhone"></span></p>
-            <a id="modalWhatsapp" href="" target="_blank" class="whatsapp-btn">
-                <i class="fab fa-whatsapp"></i> Abrir WhatsApp
-            </a>
+            <div class="modal-header">
+                <i class="fas fa-user-circle"></i>
+                <h2 id="modalName"></h2>
+            </div>
+            <div class="modal-body">
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <a href="#" id="modalPhone" class="phone-link"></a>
+                </div>
+                <div class="contact-info">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="#" id="modalWhatsapp" class="whatsapp-link" target="_blank">Enviar mensagem no WhatsApp</a>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>🗽 Roteiro Nova York 2026 | Viagem inesquecível!</p>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
