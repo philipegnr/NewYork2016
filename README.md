@@ -1,185 +1,170 @@
 # 🗽 Roteiro - Nova York 2026
 
-Site interativo e visualmente atraente para organizar o roteiro de viagem a Nova York de 23 a 31 de março de 2026.
+Site interativo e elegante com o roteiro completo de uma viagem a Nova York de 23 a 31 de março de 2026.
 
-## ✨ Características
+## ✨ Funcionalidades Implementadas
 
-### 🎨 Design Visual
-- **Degradês vibrantes e coloridos** em todo o site
-- **Ícones únicos com cores diferentes** para facilitar a identificação
-- **Ícone da Estátua da Liberdade** como ícone do site
-- **Layout responsivo** para todos os dispositivos
-- **Animações suaves** e transições elegantes
-- **Tema moderno** com fonte Poppins
+### 🎨 Design e Interface
+- **Header fixo** com ícone animado da Estátua da Liberdade
+- **Degradês modernos** em tons de roxo, rosa e azul
+- **Ícones únicos e coloridos** para cada atividade e local
+- **Design responsivo** para desktop, tablet e mobile
+- **Animações suaves** de entrada, hover e transições
 
-### 📋 Funcionalidades Implementadas
+### 📋 Seções Principais
 
-#### 1. Header Fixo
-- Título "Roteiro - Nova York" com ícone da Estátua da Liberdade
-- Subtítulo "23 a 31 de março de 2026"
-- Sempre visível no topo da página
+#### 1. Informações Gerais
+- Hospedagem com link para Google Maps
+- Datas de chegada e partida
+- Lista de participantes (clicável)
+- Link para arquivos da viagem no Google Drive
 
-#### 2. Informações Gerais (Não Fixas)
-- **Hospedagem**: Endereço com link para Google Maps
-- **Chegada**: Data e horário de chegada no JFK
-- **Partida**: Data e horário de partida do JFK
-- **Participantes**: Badges clicáveis com informações de contato
-- **Arquivos**: Link direto para Google Drive
+#### 2. Navegação por Dias
+- **Filtro sticky** que acompanha a rolagem
+- 9 tabs representando os dias da viagem (23/03 a 31/03)
+- Formato: "DD/MM - Dia da Semana"
+- Scroll suave ao clicar nas tabs
+- Atualização automática da tab ativa ao rolar a página
 
-#### 3. Participantes Interativos
-Ao clicar em cada participante, um modal elegante exibe:
-- Nome completo
-- Número de celular (clicável para ligar)
-- Link direto para WhatsApp
-
-**Participantes e Contatos:**
-- Philipe: +55 31 99741-0388
-- Sharla: +55 31 97531-8891
-- Raphael: +55 31 99253-7858
-- Sarah: +55 31 99393-1180
-- Robinho: +55 31 9962-0761
-
-#### 4. Navegação por Dias
-- **Filtro sempre visível** (sticky) com navegação rápida
-- Formato: "DD/MM - Dia da Semana" (ex: 23/03 - Dom)
-- Botão "Todos os Dias" para ver o roteiro completo
-- Scroll automático ao selecionar um dia específico
-- Destaque do dia atual durante o scroll
-
-#### 5. Itinerário Detalhado
+#### 3. Conteúdo dos Dias
 Cada dia contém:
-- **Número do dia** em destaque
-- **Data e dia da semana**
-- **Tema do dia**
-- **Divisão por períodos** com ícones descritivos:
-  - ☀️ **Manhã** (gradiente amarelo/laranja)
-  - 🌤️ **Tarde** (gradiente azul claro)
-  - 🌙 **Noite** (gradiente roxo)
+- Divisão por períodos: **Manhã**, **Tarde** e **Noite**
+- Ícones descritivos para cada período (sol, sol parcial, lua)
+- Lista de atividades com ícones coloridos
+- Links para Google Maps em todos os lugares mencionados
+- Cores diferentes para facilitar identificação
 
-#### 6. Links para Google Maps
-Todos os lugares mencionados possuem links para Google Maps, incluindo:
-- Aeroportos (JFK)
-- Estações de metrô e PATH
-- Pontos turísticos
-- Parques e museus
-- Bairros e regiões
-- Restaurantes e mercados
+#### 4. Modal de Contatos
+Ao clicar em qualquer participante, exibe:
+- Nome do participante
+- Número de telefone (clicável para ligar)
+- Botão do WhatsApp (abre conversa direta)
+- Design elegante com gradiente
 
-#### 7. Ícones Descritivos
-- 🏠 Hospedagem
-- ✈️ Chegada/Partida
-- 👥 Participantes
-- 📁 Arquivos
-- 🗽 Estátua da Liberdade
-- 🚇 Transporte público
-- 📸 Fotos
-- 🍽️ Restaurantes
-- 🏛️ Museus
-- 🌉 Pontes
-- 🛍️ Compras
-- E muitos outros contextualizados
+### 🗓️ Roteiro Completo
 
-## 📅 Roteiro Completo
+**Dia 1 (23/03 - Segunda)**: Chegada + Supermercado + Times Square  
+**Dia 2 (24/03 - Terça)**: Estátua da Liberdade + Sul de Manhattan  
+**Dia 3 (25/03 - Quarta)**: SUMMIT One Vanderbilt + Midtown + Top of the Rock  
+**Dia 4 (26/03 - Quinta)**: Central Park + MET ou Natural History  
+**Dia 5 (27/03 - Sexta)**: Lower Manhattan + One World + 9/11 Memorial  
+**Dia 6 (28/03 - Sábado)**: Brooklyn: Ponte, DUMBO e Brooklyn Heights  
+**Dia 7 (29/03 - Domingo)**: SoHo, Greenwich Village, Chinatown e Little Italy  
+**Dia 8 (30/03 - Segunda)**: Dia Livre / High Line  
+**Dia 9 (31/03 - Terça)**: Retorno ao Brasil  
 
-### Dia 1 - 23/03 (Domingo)
-Chegada + Supermercado + Times Square
+## 👥 Participantes
 
-### Dia 2 - 24/03 (Segunda-feira)
-Estátua da Liberdade + Sul de Manhattan
+- **Philipe**: +55 31 99741-0388
+- **Sharla**: +55 31 97531-8891
+- **Raphael**: +55 31 99253-7858
+- **Sarah**: +55 31 99393-1180
+- **Robinho**: +55 31 9962-0761
 
-### Dia 3 - 25/03 (Terça-feira)
-SUMMIT One Vanderbilt + Midtown + Top of the Rock
+## 📍 Hospedagem
 
-### Dia 4 - 26/03 (Quarta-feira)
-Central Park + MET ou Natural History
+**Casa em Jersey City**  
+32 Skillman Ave, Jersey City, NJ 07306, USA  
+(10 minutos a pé do PATH Journal Square)
 
-### Dia 5 - 27/03 (Quinta-feira)
-Lower Manhattan + One World + 9/11 Memorial
+## 🚀 Tecnologias Utilizadas
 
-### Dia 6 - 28/03 (Sexta-feira)
-Brooklyn: Ponte, DUMBO e Brooklyn Heights
+- **HTML5**: Estrutura semântica
+- **CSS3**: Animações, gradientes, flexbox e grid
+- **JavaScript**: Interatividade, navegação suave, modal
+- **Font Awesome 6.4.0**: Biblioteca de ícones
+- **Google Fonts**: Fonte Poppins
 
-### Dia 7 - 29/03 (Sábado)
-SoHo, Greenwich Village, Chinatown e Little Italy
+## 🎯 Funcionalidades Interativas
 
-### Dia 8 - 30/03 (Domingo)
-Dia livre / Ajustes / High Line
+### Navegação
+- Scroll suave ao clicar nas tabs de dias
+- Atualização automática da tab ativa durante a rolagem
+- Atalhos de teclado:
+  - `←` e `→`: Navegar entre dias
+  - `ESC`: Fechar modal
 
-### Dia 9 - 31/03 (Segunda-feira)
-Dia do retorno
+### Efeitos Visuais
+- Animação de flutuação no ícone da Estátua da Liberdade
+- Hover effects em cards e links
+- Destaque temporário ao navegar para um dia
+- Parallax suave no header
+- Easter egg: clique 5x no ícone da estátua! 🗽
 
-## 🎯 Recursos Visuais
-
-### Cores e Gradientes
-- **Primary**: Roxo/Azul (#667eea → #764ba2)
-- **Ícones Únicos**: Cada seção tem sua cor característica
-  - Hospedagem: Vermelho (#FF6B6B)
-  - Chegada: Turquesa (#4ECDC4)
-  - Partida: Amarelo (#FFE66D)
-  - Participantes: Azul claro (#A8DADC)
-  - Arquivos: Laranja (#F4A261)
-
-### Animações
-- Float no ícone do header
-- Fade in nos cards ao scroll
-- Hover effects em botões e links
-- Transições suaves em todos os elementos
-- Modal com animação de entrada
-
-## 🚀 Como Usar
-
-1. **Navegação**: Use o filtro de dias no topo para navegar rapidamente
-2. **Informações de Contato**: Clique nos nomes dos participantes para ver telefone e WhatsApp
-3. **Localização**: Clique em qualquer lugar mencionado para abrir no Google Maps
-4. **Arquivos**: Acesse o Google Drive pelo link na seção de informações
+### Links Externos
+- Todos os lugares possuem links diretos para Google Maps
+- Link para Google Drive com arquivos da viagem
+- Links de telefone e WhatsApp para cada participante
 
 ## 📱 Responsividade
 
-O site é totalmente responsivo e funciona perfeitamente em:
-- 💻 Desktops
-- 📱 Tablets
-- 📱 Smartphones
+O site é totalmente responsivo e se adapta a diferentes tamanhos de tela:
+- **Desktop**: Layout completo com grid de 3 colunas
+- **Tablet**: Grid de 2 colunas, navegação ajustada
+- **Mobile**: Layout vertical, tabs com scroll horizontal
 
-## 🛠️ Tecnologias Utilizadas
+## 🎨 Paleta de Cores
 
-- **HTML5**: Estrutura semântica
-- **CSS3**: Estilização avançada com gradientes e animações
-- **JavaScript**: Interatividade e funcionalidades dinâmicas
-- **Font Awesome**: Ícones
-- **Google Fonts**: Tipografia Poppins
+- **Gradiente Principal**: Roxo (#667eea) → Violeta (#764ba2) → Rosa (#f093fb)
+- **Manhã**: Amarelo (#ffc107)
+- **Tarde**: Laranja (#ff5722)
+- **Noite**: Azul escuro (#3f51b5)
+- **Ícones**: Cores variadas para cada tipo de atividade
 
-## 📂 Estrutura de Arquivos
+## 📁 Estrutura de Arquivos
 
 ```
-/
+.
 ├── index.html          # Página principal
 ├── css/
-│   └── style.css      # Estilos completos
+│   └── style.css       # Estilos completos
 ├── js/
-│   └── script.js      # Funcionalidades interativas
-└── README.md          # Documentação
+│   └── script.js       # Funcionalidades interativas
+└── README.md           # Documentação
 ```
 
-## 🌐 Links Externos
+## 🌐 Como Usar
 
-- [Google Drive - Arquivos da Viagem](https://drive.google.com/drive/folders/1B3qroB2UmisxA1Ljh3wdbav0VkNutq8T?usp=drive_link)
-- Todos os lugares linkados para Google Maps
+1. Abra o arquivo `index.html` em qualquer navegador moderno
+2. Navegue pelos dias usando as tabs ou rolando a página
+3. Clique nos participantes para ver seus contatos
+4. Clique nos locais para abrir no Google Maps
+5. Use as setas do teclado para navegação rápida
 
-## ✅ Status do Projeto
+## 🔗 Links Importantes
 
-**100% Concluído** - Todas as funcionalidades solicitadas foram implementadas:
-- ✅ Header fixo com ícone da Estátua da Liberdade
-- ✅ Informações gerais não fixas
-- ✅ Filtro de navegação sempre visível
-- ✅ Participantes clicáveis com contatos
-- ✅ Links para Google Maps em todos os lugares
-- ✅ Dias formatados (DD/MM - Dia da Semana)
-- ✅ Ícones descritivos em lugares
-- ✅ Design com degradês bonitos
-- ✅ Ícones únicos com cores diferentes
-- ✅ Todas as informações disponíveis
-- ✅ Visual caprichado e moderno
+- **Arquivos da Viagem**: [Google Drive](https://drive.google.com/drive/folders/1B3qroB2UmisxA1Ljh3wdbav0VkNutq8T?usp=drive_link)
+- Todos os lugares possuem links diretos para Google Maps
 
-## 🎉 Pronto para a Viagem!
+## 📝 Próximos Passos Sugeridos
 
-Boa viagem a Nova York! 🗽✈️🇺🇸
+- [ ] Adicionar galeria de fotos de Nova York
+- [ ] Integrar previsão do tempo para cada dia
+- [ ] Adicionar conversor de moeda (BRL → USD)
+- [ ] Criar checklist de bagagem
+- [ ] Adicionar mapa interativo com todos os pontos
+- [ ] Incluir estimativas de custos por dia
+- [ ] Adicionar sugestões de restaurantes com fotos
+- [ ] Criar versão PWA para acesso offline
+
+## 🎉 Diferenciais
+
+- ✅ Modal elegante para contatos dos participantes
+- ✅ Todos os lugares linkados ao Google Maps
+- ✅ Design moderno com degradês e animações
+- ✅ Navegação intuitiva com tabs sticky
+- ✅ Ícones coloridos para identificação rápida
+- ✅ Totalmente responsivo
+- ✅ Performance otimizada
+- ✅ Acessibilidade considerada
+
+## 💡 Dicas de Uso
+
+- **Para imprimir**: Use Ctrl+P e ajuste o layout
+- **Para compartilhar**: Envie o link do projeto publicado
+- **Para editar**: Todos os dados estão no HTML, fácil de modificar
+- **Para adicionar fotos**: Crie uma pasta `images/` e inclua no HTML
+
+---
+
+**Desenvolvido com ❤️ para uma viagem inesquecível a Nova York em 2026!** 🗽✈️🇺🇸
